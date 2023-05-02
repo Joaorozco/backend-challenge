@@ -10,8 +10,8 @@ import java.util.List;
 
 @Service
 public class BalanceServiceImpl implements BalanceService {
-    @Autowired
-    private BalanceRepository balanceRepository;
+    @Autowired(required = true)
+    BalanceRepository balanceRepository;
     @Override
     public List<Balance> getBalance() {
         return balanceRepository.findAll();

@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class CardsServiceImpl implements CardsService {
     @Autowired
-    private CardsRepository cardsRepository;
+    CardsRepository cardsRepository;
 
     @Override
     public List<Cards> getCards() {
