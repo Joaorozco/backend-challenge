@@ -14,7 +14,7 @@ import java.util.List;
 
 public class BalanceController {
     @Autowired
-    private BalanceService balanceService;
+    BalanceService balanceService;
 
     @GetMapping("/allBalance")
     public List<Balance> getBalance(){

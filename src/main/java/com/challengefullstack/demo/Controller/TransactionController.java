@@ -12,7 +12,7 @@ import java.util.List;
 @CrossOrigin(origins = "https://6450f5d745b13b48f7749bc7--challenge-full-stack.netlify.app")
 public class TransactionController {
     @Autowired
-    private TransactionService transactionService;
+    TransactionService transactionService;
 
     @GetMapping("/allTransaction")
     public List<Transaction> list(){

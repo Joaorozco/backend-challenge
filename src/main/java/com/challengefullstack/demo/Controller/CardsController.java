@@ -13,7 +13,7 @@ import java.util.List;
 @CrossOrigin(origins = "https://6450f5d745b13b48f7749bc7--challenge-full-stack.netlify.app")
 public class CardsController {
     @Autowired
-    private CardsService cardsService;
+    CardsService cardsService;
 
     @GetMapping("/allCards")
     public List<Cards> getCards(){
