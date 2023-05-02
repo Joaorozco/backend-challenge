@@ -8,8 +8,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/transaction")
-//@CrossOrigin(origins = "http://localhost:4200")
-@CrossOrigin(origins = "https://6450f5d745b13b48f7749bc7--challenge-full-stack.netlify.app")
+@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "https://6450f5d745b13b48f7749bc7--challenge-full-stack.netlify.app")
 public class TransactionController {
     @Autowired
     TransactionService transactionService;
