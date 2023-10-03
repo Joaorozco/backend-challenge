@@ -10,11 +10,11 @@ import java.util.List;
 
 @Service
 public class TransactionServiceImpl implements TransactionService {
-
     @Autowired
     TransactionRepository transactionRepository;
+
     @Override
-    public List<Transaction> list() {
+    public List<Transaction> getTransaction() {
         return transactionRepository.findAll();
     }
 

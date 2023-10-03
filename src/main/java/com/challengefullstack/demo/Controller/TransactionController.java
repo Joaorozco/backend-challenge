@@ -4,6 +4,7 @@ import com.challengefullstack.demo.Entity.Transaction;
 import com.challengefullstack.demo.Service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController
@@ -15,12 +16,7 @@ public class TransactionController {
     TransactionService transactionService;
 
     @GetMapping("/allTransaction")
-    public List<Transaction> list(){
-        return transactionService.list();
-    }
-
+    public List<Transaction> getTransaction(){ return transactionService.getTransaction();}
     @PostMapping("/insert")
-    public Transaction insert(@RequestBody Transaction transaction){
-        return transactionService.insert(transaction);
-    }
+    public Transaction insert(@RequestBody Transaction transaction) { return transactionService.insert(transaction);}
 }

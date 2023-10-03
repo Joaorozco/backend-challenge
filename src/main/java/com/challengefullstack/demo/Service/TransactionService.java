@@ -5,6 +5,6 @@ import com.challengefullstack.demo.Entity.Transaction;
 import java.util.List;
 
 public interface TransactionService {
-    public List<Transaction> list();
+    public List<Transaction> getTransaction();
     public Transaction insert(Transaction transaction);
 }
