@@ -1,4 +1,4 @@
 FROM amazoncorretto:17-alpine-jdk
 MAINTAINER JoaquinOrozco
-COPY target/demo.jar challenge-full-stack.jar
+COPY target/demo-0.0.1-SNAPSHOT challenge-full-stack.jar
 ENTRYPOINT  ["java", "-jar", "/challenge-full-stack.jar"]
